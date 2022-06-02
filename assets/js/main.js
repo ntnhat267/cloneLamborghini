@@ -27,3 +27,22 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " btn-hover";
 }
+
+
+//xử lý before
+
+// let links = document.getElementsByClassName("header-nav-left-item-link")
+// let boders = document.querySelectorAll('a.header-nav-left-item-link::before')
+
+// console.log(boders)
+
+// for(let i =0 ; i< boders.length;i++)
+// {
+//   if(boders[i])
+//   {
+//     boders[i].addEventListener("blur",function(e)
+//     {
+//       console.log(boders[i])
+//     })
+//   }
+// }
