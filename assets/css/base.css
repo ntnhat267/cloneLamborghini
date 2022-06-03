@@ -30,12 +30,21 @@ html {
 
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: .5s;
   }
+
+.leftToRight {
+    animation-name: leftToRight;
+    animation-duration: .5s;
+}
   
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+    from {
+        
+        opacity: .4} 
+    to {
+        
+        opacity: 1}
   }
 
 
@@ -54,13 +63,13 @@ html {
 
 @keyframes endToStart {
     0% {
-        opacity: 100% ;
+        /* opacity: 100% ; */
         width: 100%;
        
     }
     
     100% {
-        opacity: 0% ;
+        /* opacity: 0% ; */
         width: 0%;
         height: 0%;
         /* border: 0px black; */
@@ -94,5 +103,17 @@ html {
         transform: translateY(1);
         /* border: 0px black; */
         
+    }
+}
+
+
+@keyframes leftToRight {
+    from {
+        left:-300px;
+        
+    }
+
+    to {
+        left:8%;
     }
 }
