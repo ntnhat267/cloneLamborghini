@@ -68,7 +68,7 @@
 
 
 .header-nav-left-item-item {
-    position: relative;
+    /* position: relative; */
     margin-top: 40px;
     /* color: #6f6f6f; */
     width: calc(100% + 80px);
@@ -82,8 +82,8 @@
 .header-nav-left-item-item-list {
     position: absolute;
     list-style: none;
-    left: 100%;
-    top: 0%;
+    left: 200%;
+    top: 10.9%;
     visibility: hidden;
 }
 
@@ -308,6 +308,22 @@
 .third {
     display: none;
 }
+
+
+/* //hexagon */
+/* 
+.hexagon {
+    
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+      
+} */
+
+.slider-2 {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
 
 
 
