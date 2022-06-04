@@ -1,5 +1,5 @@
 .header {
-   
+   z-index: 999;
 }
 
 .header-nav {
@@ -34,6 +34,7 @@
 .header-nav-left-item:hover .header-nav-left-item-list {
     animation-name: topToBottom;
     animation-duration: .2s;
+    /* transition: .5s; */
     transform-origin: 90%   10% ;
 }
 
@@ -112,6 +113,10 @@
     top: 50%;
 }
 
+.header-nav-left-item i {
+    font-weight: 1000;
+}
+
 
 .header-nav-img {
     margin-left: 30px;
@@ -144,6 +149,7 @@
     width: 0px;
     height: 0px;
     border-radius: 15px;
+    transition: .6s;
     animation-name: endToStart;
     animation-duration: .6s;
     /* opacity: 0%; */
@@ -744,6 +750,229 @@
         color: white;
 
 }
+
+
+/* Ask me */
+
+.mess-ask-me {
+   
+    height: 100vh;
+    width: 42.5rem;
+    position: absolute;
+    top: 0;
+
+    right: -30%;
+    background-color: white;
+
+
+    
+    transition: .5s;
+}
+
+
+.mess-header {
+    margin-top: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+    color: black;
+}
+
+.close:hover {
+    /* font-size: 3rem; */
+    font-weight: 700;
+}
+
+.mess-content {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e8e8e8;
+
+
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    height: 60vh;
+
+}
+
+.mess-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mess-content p {
+    vertical-align: middle;
+    padding-left: 18px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    word-spacing: 0.5rem;
+    color: black;
+    margin: 20px 0;
+}
+
+
+.mess-content-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* overflow-y: scroll; */
+    /* overflow: hidden; */
+}
+
+.mess-content::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
+
+.mess-content-item {
+    border: 1px solid #e8e8e8;
+    margin: 5px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.mess-content-item:hover {
+    transition: .9s;
+    border-color: black;
+}
+
+.mess-content-item a {
+
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: #181818;
+}
+
+.mess-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px;
+}
+
+.mess-footer input {
+    border: 1px solid #ced4da;
+    padding: 0 20px;
+    height: 5rem;
+    width: 77.3%;
+    font-size: 1.7rem;
+    /* letter-spacing: 0.2rem; */
+    color: #d0d0d0
+}
+
+
+.header-nav-left-item i,
+.close {
+    cursor: pointer;
+}
+
+
+/* SEARCH */
+
+.search {
+    position: absolute;
+    top :-1500%;
+    background-color: #181818;
+    color: white;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    transition: .9s;
+    z-index: 1;
+}
+
+.search-header {
+    position: absolute;
+    top: -13%;
+    left: 0%;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100px;
+    z-index: 10001;
+    
+}
+
+.search-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 100px 0;
+    z-index: -1;
+}
+.search-text p{
+    margin-bottom: 2.4rem;
+        font-size: 3.4rem;
+        font-weight: 500;
+        line-height: 1;
+
+}
+
+.search-text span {
+    margin-bottom: 12rem;
+    line-height: 1;
+    font-size: 11.6rem;
+    font-weight: bold;
+
+}
+
+.search-input {
+    width: 100%;
+    margin-top: 160px;
+    border-bottom: 1px solid #464646;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input input {
+    border: none;
+    /* padding: 1.3rem 0; */
+    /* border-bottom: 1px solid #464646; */
+    font-size: 2.6rem;
+    font-style: italic;
+    background-color: transparent;
+    /* min-width: 0; */
+    color: white;
+    width: 100%;
+    border-color: transparent;
+    outline: none;
+}
+
+.search-input span {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+
+}
+
+
+.search-close {
+    display: flex;
+    align-items: center;
+    
+}
+
+.search-close  p {
+    margin-right: 2rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+
+.search i {
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+
 
 
 

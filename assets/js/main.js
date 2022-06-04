@@ -53,6 +53,7 @@ function currentSlide3(n) {
 
 function showSlides3(n) {
   let i;
+  
   let slides = document.getElementsByClassName("slide3");
   let dots = document.getElementsByClassName("btn3");
   let texts = document.getElementsByClassName("slider-3-info")
@@ -98,3 +99,42 @@ function showSlides3(n) {
 //     })
 //   }
 // }
+
+
+// chỉnh messsege
+
+
+let message =  document.querySelector(".mess")
+console.log(message)
+let mess = document.querySelector(".mess-ask-me")
+console.log(mess)
+
+message.addEventListener("click", function() {
+  mess.style.right = "0%";
+  // mess.style.animation-name = ""
+  // mess.style.animation-name = "startToEnd" ;
+  // mess.style.animation-duration = "0.5s";
+})
+
+
+let close = document.querySelector(".close")
+
+close.addEventListener("click", function() {
+  mess.style.right = "-30%"
+})
+
+// chỉnh search
+
+let search = document.querySelector(".search")
+let btnSearch = document.querySelector(".btnSearch")
+let searchClose = document.querySelector(".search-close")
+console.log(btnSearch)
+
+
+btnSearch.addEventListener("click", function() {
+  search.style.top  ="100%"
+})
+
+searchClose.addEventListener("click", function() {
+  search.style.top  ="-1500%"
+})

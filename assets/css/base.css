@@ -117,3 +117,12 @@ html {
         left:8%;
     }
 }
+
+@keyframes rightToLeft {
+    from {
+        left: -30%;
+    }
+    to {
+        left: 0%;
+    }
+}
