@@ -1117,7 +1117,7 @@
     font-weight: 500;
   }
 
-  
+
   #content .slider2 .slide2-text-container .slider2-explore {
     position: relative;
     top: 250px;
@@ -1150,8 +1150,143 @@
   } 
 
 
+  /* menu */
+
+  .menu {
+      position: absolute;
+      width: 100vw;
+      height: 70vh;
+      top: -1100%;
+      background-color: #181818;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* align-items: center */
+      transition:  0.5s ;
+  }
+
+  .menu-headers {
+
+    margin-top: 100px;
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      
+  }
+
+  .menu-headers div p {
+    margin: 20px 10px;
+      font-size: 2.2rem;
+    line-height: 1.5;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1.3px;
+    color: white;
+  }
 
 
+  .menu-footers {
+      display: flex;
+      /* justify-content: space-around; */
+
+
+      max-width: 1120px;
+      width: 100%;
+      margin: 0 auto;
+
+      
+    }
+    
+    .menu-languges {
+        
+        font-size: 1.7rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      margin-left: 70px;
+    }
+
+    .menu-languges div {
+        margin-bottom:  30px;
+    }
+
+    .menu-languges div span {
+        margin-right: 50px;
+    }
+
+
+    .text-menu {
+        margin: 30px 0;
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: start;
+        letter-spacing: 0.25rem;
+        color: #909090;
+    }
+
+    .menu-socials {
+        margin-left: 40px;
+    }
+
+
+  .menu-socials-list {
+      display: flex;
+      list-style: none;
+
+
+      font-size: 3rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+  }
+
+  .menu-socials-list li {
+      margin-right: 30px;
+  }
+
+  .menu-setting {
+      /* padding-right: 500px; */
+      margin-left: 50px;
+  }
+
+
+  .menu-tz-t {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0;
+    }
+    
+    .menu-tz-t span {
+        
+        font-size: 1.7rem;
+        color: #909090;
+  }
+
+  .menu-tz-t div {
+      margin-left: 50px;
+  }
+
+  .menu-tz-t i {
+      margin-left: 30px;
+      font-size: 1.7rem;
+    font-weight: bolder;
+    color: white;  }
+
+    .menu-hover {
+        color: #464646 !important;
+    }
+
+
+    .menu-close {
+        display: none;
+        /* visibility: hidden; */
+        /* visibility: visible; */
+        
+    }
 
 
 

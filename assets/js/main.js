@@ -140,6 +140,51 @@ searchClose.addEventListener("click", function() {
 })
 
 
+//chỉnh menu
+
+let menu = document.querySelector(".menu")
+let btnMenu= document.querySelector(".btnMenu")
+let menuClose = document.querySelector(".menu-close")
+console.log(menuClose)
+let menuMenu = document.querySelector(".menu-menu")
+
+// btnMenu.addEventListener("click", function() {
+//   menu.style.top  ="100%"
+//   // menuMenu.style.opancity = "0.5"
+//   menuMenu.style.visibility = "hidden"
+//   menuClose.style.visibility= "visible"
+// })
+
+
+// menuClose.addEventListener("click", function() {
+//   menu.style.top  ="-1100%"
+//   // menuMenu.style.opancity = "0.5"
+//   menuMenu.style.visibility = "visible"
+//   menuClose.style.visibility= "hidden"
+// })
+
+
+menuMenu.addEventListener("click", function() {
+  menu.style.top  ="100%"
+  // menuMenu.style.opancity = "0.5"
+  menuMenu.style.display = "none"
+  menuClose.style.display= "block"
+})
+
+
+menuClose.addEventListener("click", function() {
+  menu.style.top  ="-1100%"
+  // menuMenu.style.opancity = "0.5"
+  menuMenu.style.display = "block"
+  menuClose.style.display= "none"
+  console.log(menuMenu)
+})
+
+
+
+
+
+
 
 // slider -2
 
